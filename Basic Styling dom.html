@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    /* CSS for text color changes */
+    .red {
+      color: red;
+    }
+    .yellow {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="textElement">Masai School</h1>
+  <button onClick="changeColor('red')">Change Text color to red</button>
+  <button onClick="changeColor('yellow')">Change Text color to yellow</button>
+
+  <script>
+    function changeColor(color) {
+      
+      var textElement = document.getElementById('textElement');
+      
+      textElement.classList.remove('red', 'yellow');
+      
+      textElement.classList.add(color);
+    }
+  </script>
+</body>
+</html>
